@@ -114,7 +114,7 @@ int main(int argc, char * argv[])
 		return EXIT_FAILURE;
 	}
 
-	memset((void *)img.pad, 0, BLOCK_SIZE);
+	memset(img.pad, 0, BLOCK_SIZE);
 
 	/* get input file size */
 	file_size = lseek(fd_in, 0, SEEK_END);
